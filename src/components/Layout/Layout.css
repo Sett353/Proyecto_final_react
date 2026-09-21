@@ -1,0 +1,112 @@
+.header {
+  height: 70px;
+  background: #09090b;
+  color: #f5f3ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 40px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  cursor: pointer;
+  user-select: none;
+  transition: 0.3s ease;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.menu {
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+  gap: 35px;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Botones del menú */
+
+.menu button {
+  border: none;
+  background: transparent;
+
+  color: #faf5ff;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  padding: 8px 4px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Hover de los botones */
+
+.menu button:hover {
+  color: #e879f9;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   LOGIN
+========================= */
+
+.btn-login {
+  padding: 10px 20px;
+
+  border: 1px solid #a78bfa;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #09090b 0%, #2e1065 55%, #7e22ce 100%);
+  color: #faf5ff;
+
+  font-weight: bold;
+  font-size: 0.95rem;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Hover del login */
+
+.btn-login:hover {
+  background: #e879f9;
+  color: #09090b;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+main {
+  min-height: calc(100vh - 70px);
+}

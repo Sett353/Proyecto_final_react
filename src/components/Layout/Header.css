@@ -1,0 +1,68 @@
+.Header{
+    background:
+        radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.95) 0 8px, transparent 9px),
+        radial-gradient(circle at 40% 46%, rgba(255, 255, 255, 0.95) 0 8px, transparent 9px),
+        radial-gradient(circle at 18% 24%, rgba(255, 255, 255, 0.8) 0 10px, transparent 11px),
+        radial-gradient(circle at 52% 58%, rgba(255, 255, 255, 0.95) 0 8px, transparent 9px),
+        linear-gradient(135deg, #050505 0%, #170b2f 55%, #4c1d95 100%);
+    color: #faf5ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+.Header h1{
+    margin: 0;
+    font-size: 24px;
+}
+.cabecera_imagen{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.perfil-link {
+    display: inline-flex;
+    border: 2px solid #e879f9;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.perfil-link:hover {
+    border-color: #faf5ff;
+    transform: scale(1.06);
+}
+
+.perfil-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    .Header {
+        padding: 8px 12px;
+    }
+
+    .Header h1 {
+        font-size: 18px;
+    }
+
+    .cabecera_imagen {
+        width: 90px;
+        height: 90px;
+    }
+}
